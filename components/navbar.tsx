@@ -36,11 +36,11 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-red-600">
-              Times Computer Education
-            </Link>
-          </div>
+        <div className="flex items-center">
+          <Link href="/" className="text-2xl font-bold text-red-600">
+            <img src="/logo.png" alt="Logo" className="h-16 mr-2" />
+          </Link>
+        </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
