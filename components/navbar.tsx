@@ -145,12 +145,11 @@ const Navbar = () => {
                 <button
                   onClick={toggleCoursesMenu}
                   className={`flex items-center ${isActive("/courses") ? "text-red-600 font-medium" : "text-gray-800"} hover:text-red-600 transition-colors duration-300`}
-                ><Link href="/courses">
+                >
                   Courses{""}
                   <ChevronDown
                     className={`ml-1 h-4 w-4 transition-transform duration-500 ${isCoursesOpen ? "rotate-180" : ""}`}
                   />
-                  </Link>
                 </button>
                 {isCoursesOpen && (
                   <div className="mt-2 ml-4 space-y-2 animate-accordion-down">
