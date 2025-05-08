@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link href="/" className="text-2xl font-bold gradient-text mb-6 inline-block">
-              TechEdu
+              Times Computer Education
             </Link>
             <p className="text-gray-600 mb-6">
               Empowering individuals with the knowledge and skills needed to excel in the digital world through

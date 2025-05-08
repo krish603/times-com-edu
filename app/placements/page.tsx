@@ -1,11 +1,13 @@
-import CoursesHero from "@/components/courses/courses-hero"
-import CourseCategories from "@/components/courses/course-categories"
-import FeaturedCourses from "@/components/courses/featured-courses"
-import CourseSearch from "@/components/courses/course-search"
-import WhyChooseUs from "@/components/courses/why-choose-us"
+import PlacementsHero from "@/components/placements/placements-hero"
+import PlacementStats from "@/components/placements/placement-stats"
+import TopRecruiters from "@/components/placements/top-recruiters"
+import SuccessStories from "@/components/placements/success-stories"
+import PlacementProcess from "@/components/placements/placement-process"
+import IndustryDistribution from "@/components/placements/industry-distribution"
+import PlacementTestimonials from "@/components/placements/placement-testimonials"
 import CtaSection from "@/components/cta-section"
 
-export default function CoursesPage() {
+export default function PlacementsPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900 relative overflow-hidden pt-20">
       {/* Floating background elements */}
@@ -20,11 +22,13 @@ export default function CoursesPage() {
         <div className="floating-element w-24 h-24 border-4 border-black rounded-full top-[30%] left-[70%] animate-spin-slow animate-delay-3"></div>
       </div>
 
-      <CoursesHero />
-      <CourseCategories />
-      {/* <CourseSearch />
-      <FeaturedCourses /> */}
-      <WhyChooseUs />
+      <PlacementsHero />
+      <PlacementStats />
+      <TopRecruiters />
+      <SuccessStories />
+      <IndustryDistribution />
+      <PlacementProcess />
+      <PlacementTestimonials />
       <CtaSection />
     </main>
   )

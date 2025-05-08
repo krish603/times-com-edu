@@ -48,10 +48,10 @@ const HeroSection = () => {
         <div className="flex flex-col items-center">
           <div className="text-center mb-12 max-w-3xl mx-auto">
             <div className="inline-block px-4 py-2 bg-gray-100 rounded-full mb-6">
-              <span className="text-red-600 font-medium">Unlock Your Potential with TCE</span>
+              <span className="text-red-600 font-medium">Government approved CCC course</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
-              Elevate Your <span className="gradient-text">Tech Skills</span> With Expert Guidance
+              Welcome to <span className="gradient-text">Times</span> Family
             </h1>
             <p className="text-gray-600 text-lg mb-8">
               Discover comprehensive computer education programs designed to prepare you for the digital future. From
@@ -95,7 +95,7 @@ const HeroSection = () => {
             ))}
           </div>
 
-          <div className="flex items-center justify-center">
+          {/* <div className="flex items-center justify-center">
             <div className="flex -space-x-4">
               {[
                 "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop",
@@ -120,7 +120,7 @@ const HeroSection = () => {
                 <span className="font-bold">4.9</span> (2.5k+ reviews)
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

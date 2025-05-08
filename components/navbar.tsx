@@ -88,10 +88,10 @@ const Navbar = () => {
               </div>
             </div>
             <Link
-              href="/blog"
+              href="/placements"
               className={`${isActive("/blog") ? "text-red-600 font-medium" : "text-gray-800"} hover:text-red-600 transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center`}
             >
-              Placments
+              Placements
             </Link>
             <Link
               href="/gallery"
@@ -178,7 +178,7 @@ const Navbar = () => {
                 href="/blog"
                 className={`${isActive("/blog") ? "text-red-600 font-medium" : "text-gray-800"} hover:text-red-600 transition-colors duration-300`}
               >
-                Blog
+                Placements
               </Link>
               <Link
                 href="/gallery"

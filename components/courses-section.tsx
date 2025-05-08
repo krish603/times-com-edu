@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Clock, Users, BarChart } from "lucide-react"
+import Link from "next/link"
 
 const courses = [
   {
@@ -51,7 +52,9 @@ const CoursesSection = () => {
             </p>
           </div>
           <div className="mt-6 md:mt-0">
-            <Button className="solid-red transition-transform duration-300 hover:scale-105">View All Courses</Button>
+            <Link href="/courses" >
+              <Button className="border-[1px] border-red-600 bg-transparent text-red-600 transition-all duration-300 hover:scale-105">View All Courses</Button>
+            </Link>
           </div>
         </div>
 
@@ -94,7 +97,7 @@ const CoursesSection = () => {
                     <span>{course.level}</span>
                   </div>
                 </div>
-                <Button className="w-full solid-red transition-transform duration-300 hover:scale-105">
+                <Button  className="w-full solid-red transition-transform duration-300 hover:scale-105">
                   Enroll Now
                 </Button>
               </div>
