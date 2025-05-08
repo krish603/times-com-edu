@@ -1,10 +1,11 @@
-import GalleryHero from "@/components/gallery/gallery-hero"
-import GalleryTabs from "@/components/gallery/gallery-tabs"
-import GalleryGrid from "@/components/gallery/gallery-grid"
-import VideoSection from "@/components/gallery/video-section"
+import ContactHero from "@/components/contact/contact-hero"
+import BranchLocations from "@/components/contact/branch-locations"
+import ContactForm from "@/components/contact/contact-form"
+import ContactInfo from "@/components/contact/contact-info"
+import Faq from "@/components/contact/faq"
 import CtaSection from "@/components/cta-section"
 
-export default function GalleryPage() {
+export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900 relative overflow-hidden pt-20">
       {/* Floating background elements */}
@@ -19,10 +20,21 @@ export default function GalleryPage() {
         <div className="floating-element w-24 h-24 border-4 border-black rounded-full top-[30%] left-[70%] animate-spin-slow animate-delay-3"></div>
       </div>
 
-      <GalleryHero />
-      <GalleryTabs />
-      <GalleryGrid />
-      <VideoSection />
+      <ContactHero />
+      <div className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-10">
+            <div className="lg:w-1/2">
+              <BranchLocations />
+            </div>
+            <div className="lg:w-1/2">
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      </div>
+      <ContactInfo />
+      <Faq />
       <CtaSection />
     </main>
   )

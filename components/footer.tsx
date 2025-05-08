@@ -49,8 +49,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-600 hover:text-red-600 transition-colors">
-                  Blog
+                <Link href="/placements" className="text-gray-600 hover:text-red-600 transition-colors">
+                  Placements
                 </Link>
               </li>
               <li>
@@ -84,21 +84,6 @@ const Footer = () => {
                   Advanced Courses
                 </Link>
               </li>
-              <li>
-                <Link href="/courses/web-development" className="text-gray-600 hover:text-red-600 transition-colors">
-                  Web Development
-                </Link>
-              </li>
-              <li>
-                <Link href="/courses/data-science" className="text-gray-600 hover:text-red-600 transition-colors">
-                  Data Science
-                </Link>
-              </li>
-              <li>
-                <Link href="/courses/cybersecurity" className="text-gray-600 hover:text-red-600 transition-colors">
-                  Cybersecurity
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -111,11 +96,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-red-600 mr-3" />
-                <span className="text-gray-600">+1 (123) 456-7890</span>
+                <span className="text-gray-600">+91 98258 99293</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-red-600 mr-3" />
-                <span className="text-gray-600">info@techedu.com</span>
+                <span className="text-gray-600">info@timesedu.com</span>
               </li>
             </ul>
           </div>

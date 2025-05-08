@@ -11,7 +11,7 @@ export default function PlacementsPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900 relative overflow-hidden pt-20">
       {/* Floating background elements */}
-      <div className="fixed inset-0 w-full h-full overflow-hidden">
+      <div className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="floating-element w-32 h-32 bg-red-500 rounded-full top-[10%] left-[5%] animate-float"></div>
         <div className="floating-element w-24 h-24 bg-black rounded-full top-[20%] right-[10%] animate-float-reverse animate-delay-2"></div>
         <div className="floating-element w-40 h-40 bg-red-500 rounded-full bottom-[15%] left-[15%] animate-float animate-delay-3"></div>
