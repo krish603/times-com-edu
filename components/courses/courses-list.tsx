@@ -9,12 +9,9 @@ interface Course {
   title: string
   category: string
   image: string
-  instructor: string
-  instructorImage: string
   duration: string
   students: string
   level: string
-  price: string
   description: string
   fullDescription: string
   curriculum: string[]
@@ -72,16 +69,6 @@ const CoursesList = ({ courses }: CoursesListProps) => {
                 </div>
               </div>
               <div className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-                    <img
-                      src={course.instructorImage || "/placeholder.svg"}
-                      alt={course.instructor}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <span className="text-gray-700">{course.instructor}</span>
-                </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900">{course.title}</h3>
                 <p className="text-gray-600 mb-4">{course.description}</p>
                 <div className="flex flex-wrap gap-4 mb-6">
@@ -99,8 +86,7 @@ const CoursesList = ({ courses }: CoursesListProps) => {
                   </div>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-xl font-bold text-red-600">{course.price}</span>
-                  <Button onClick={() => openCourseDetails(course)} className="solid-red">
+                  <Button onClick={() => openCourseDetails(course)} className="solid-red w-full rounded-md transition-transform duration-300 hover:scale-105">
                     View Details
                   </Button>
                 </div>
@@ -135,19 +121,6 @@ const CoursesList = ({ courses }: CoursesListProps) => {
 
               <div className="p-6">
                 <div className="flex flex-wrap justify-between items-center mb-6 pb-6 border-b border-gray-200">
-                  <div className="flex items-center mb-4 md:mb-0">
-                    <div className="w-12 h-12 rounded-full overflow-hidden mr-3">
-                      <img
-                        src={selectedCourse.instructorImage || "/placeholder.svg"}
-                        alt={selectedCourse.instructor}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Instructor</p>
-                      <p className="text-gray-600">{selectedCourse.instructor}</p>
-                    </div>
-                  </div>
 
                   <div className="flex space-x-6">
                     <div className="text-center">
@@ -205,10 +178,6 @@ const CoursesList = ({ courses }: CoursesListProps) => {
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-center bg-gray-50 p-6 rounded-lg">
-                  <div className="mb-4 md:mb-0">
-                    <p className="text-gray-600">Course Price</p>
-                    <p className="text-3xl font-bold text-red-600">{selectedCourse.price}</p>
-                  </div>
                   <div className="flex space-x-4">
                     <Button variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white">
                       Add to Wishlist

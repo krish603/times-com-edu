@@ -18,16 +18,7 @@ const CoursesCategoryHero = ({ title, description, image }: CoursesCategoryHeroP
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">{title}</h1>
           <p className="text-white/90 text-lg md:text-xl mb-8">{description}</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button className="solid-red px-8 py-6 h-auto text-lg transition-transform duration-300 hover:scale-105">
-              Browse Courses
-            </Button>
-            <Button
-              variant="outline"
-              className="border-white text-white hover:bg-white/10 px-8 py-6 h-auto text-lg transition-transform duration-300 hover:scale-105"
-            >
-              Download Brochure
-            </Button>
+          <div className="flex flex-wrap justify-center gap-4"> 
           </div>
         </div>
       </div>
