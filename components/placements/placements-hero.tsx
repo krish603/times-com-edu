@@ -28,7 +28,7 @@ const PlacementsHero = () => {
             </Button>
             <Button
               variant="outline"
-              className="border-white text-white hover:bg-white/10 px-8 py-6 h-auto text-lg transition-transform duration-300 hover:scale-105"
+              className="border-red-600 text-red-600 hover:bg-white hover:text-red-600 px-8 py-6 h-auto transition-transform duration-300 hover:scale-105"
             >
               Enroll Now <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

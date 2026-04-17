@@ -23,7 +23,7 @@ const CoursesHero = () => {
             </Button>
             <Button
               variant="outline"
-              className="border-red-600 text-red-600 hover:bg-white/80 hover:text-white px-8 py-6 h-auto text-lg transition-transform duration-300 hover:scale-105"
+              className="border-red-600 text-red-600 hover:bg-white/80 hover:text-red-600 px-8 py-6 h-auto text-lg transition-transform duration-300 hover:scale-105"
             >
               Request Information
             </Button>

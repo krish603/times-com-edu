@@ -25,12 +25,12 @@ const GalleryHero = () => {
             <Button className="solid-red px-8 py-6 h-auto text-lg transition-transform duration-300 hover:scale-105">
               View Photos
             </Button>
-            <Button
+            {/* <Button
               variant="outline"
               className="border-white text-white hover:bg-white/10 px-8 py-6 h-auto text-lg transition-transform duration-300 hover:scale-105"
             >
               Watch Videos
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
